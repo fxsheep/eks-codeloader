@@ -1,0 +1,5 @@
+0x0A00 SC.mov #0x0,r0
+0x0A21 SC.mov #0x4,r1
+0x5001 LS0.ld{dw} (r0),r0
+0x5001 LS0.ld{dw} (r0),r0
+0x5411 LS0.st{dw} r0,(r1)
