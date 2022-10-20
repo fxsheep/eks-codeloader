@@ -47,8 +47,8 @@ int main(int argc, char **argv){
             hex = (hex << 16) | 0x3CA0; //padding with NOP
         }
         *(progbuf++) = hex;
-        for (int i = 0; i < 2; i++) {
-            progbuf++; //pad with 4 NOPs
+        for (int i = 0; i < 4; i++) {
+            progbuf++; //pad with 8 NOPs
         }
     }
     printf("### Program buffer ###\n");
